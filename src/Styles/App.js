@@ -1,26 +1,27 @@
 import "../Styles/App.css";
 import React from "react";
 import Typography from "@mui/material/Typography";
-import { makeStyles } from '@material-ui/core/styles'
-
-
-const useStyles = makeStyles({
-  pink : {
-    color : "deeppink" ,
-   fontSize : 150 ,
-  },
-});
+import Box from "@mui/material/Box";
+import { Container } from "@mui/material";
 
 function App() {
-
-  const classes = useStyles();
   return (
-    <>
-      <Typography variant="h3" align="center" className={classes.pink} gutterBottom>Hello Material UI</Typography>
-      {/* <Typography variant="h3" align="right">Hello Material UI</Typography> */}
+    <Container maxWidth="md">
+      <Box textAlign="center" pt={3}>
+        <Typography variant="h3">About Us</Typography>
 
-      
-    </>
+        <Typography variant="subtitle1">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias ut,
+          quasi nemo quod atque incidunt dignissimos numquam quo accusantium
+          perferendis? Dolorem, recusandae corrupti sunt cupiditate iusto aut
+          sint eum quisquam eos repellat eaque, facilis illum, impedit ipsam
+          sequi laboriosam. Voluptate? Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Necessitatibus maiores provident, illo nostrum
+          cupiditate, hic beatae architecto aut sequi perferendis voluptatibus
+          eos? Ab officiis est debitis repellendus ut porro neque!
+        </Typography>
+      </Box>
+    </Container>
   );
 }
 
