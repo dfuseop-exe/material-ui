@@ -3,25 +3,54 @@ import React from "react";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import { Container } from "@mui/material";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles({
+  
+  container : {
+    maxWidth : '100vw',
+    maxHeight : '100vh',
+    display:"flex",
+    justifyContent : "space-evenly" ,
+  },
+  mystyle: {
+    backgroundColor: "red",
+    borderRadius: 5,
+    width : 300 ,
+    color:"white",
+    padding : 50 ,
+    boxShadow : "0px 20px 30px rgba(0,0,0,0.1)"
+  }
+});
+
 
 function App() {
-  return (
-    <Container maxWidth="md">
-      <Box textAlign="center" pt={3}>
-        <Typography variant="h3">About Us</Typography>
+  const classes = useStyles();
+ 
 
+  return (
+    <Box className={classes.container}>
+      <Box className={classes.mystyle}>
+        <Typography variant="h4">Heading</Typography>
         <Typography variant="subtitle1">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias ut,
-          quasi nemo quod atque incidunt dignissimos numquam quo accusantium
-          perferendis? Dolorem, recusandae corrupti sunt cupiditate iusto aut
-          sint eum quisquam eos repellat eaque, facilis illum, impedit ipsam
-          sequi laboriosam. Voluptate? Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Necessitatibus maiores provident, illo nostrum
-          cupiditate, hic beatae architecto aut sequi perferendis voluptatibus
-          eos? Ab officiis est debitis repellendus ut porro neque!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sunt.
         </Typography>
       </Box>
-    </Container>
+
+      <Box className={classes.mystyle}>
+        <Typography variant="h4">Heading</Typography>
+        <Typography variant="subtitle1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sunt.
+        </Typography>
+      </Box>
+
+      <Box className={classes.mystyle}>
+        <Typography variant="h4">Heading</Typography>
+        <Typography variant="subtitle1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sunt.
+        </Typography>
+      </Box>
+    </Box>
   );
 }
 
