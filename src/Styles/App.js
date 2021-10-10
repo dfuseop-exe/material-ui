@@ -2,11 +2,9 @@ import "../Styles/App.css";
 import React from "react";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import { Container } from "@mui/material";
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles({
-  
+const useStyles = makeStyles((theme) =>({
   container : {
     maxWidth : '100vw',
     maxHeight : '100vh',
@@ -14,14 +12,14 @@ const useStyles = makeStyles({
     justifyContent : "space-evenly" ,
   },
   mystyle: {
-    backgroundColor: "red",
+    backgroundColor: theme.palette.warning.light,
     borderRadius: 5,
     width : 300 ,
     color:"white",
     padding : 50 ,
-    boxShadow : "0px 20px 30px rgba(0,0,0,0.1)"
+    boxShadow : theme.shadows[10],
   }
-});
+}));
 
 
 function App() {
