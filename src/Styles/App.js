@@ -5,37 +5,12 @@ import { Box } from "@mui/material";
 
 function App() {
   return (
-    <Box display="flex">
-      <Box width={400} boxShadow={6} p={3} m={3}>
-        <Typography variant="h4" align="center">
-          Blogging Site
-        </Typography>
-        <Typography variant="body1" align="center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam molestias
-          commodi impedit ab? Quos modi aspernatur mollitia provident
-          voluptatem! Illum deleniti suscipit architecto commodi voluptatibus
-          temporibus aut eos nemo exercitationem. Lorem ipsum dolor sit amet
-          consectetur, adipisicing elit. Odit dicta exercitationem ratione
-          consequuntur dolores quo laudantium voluptate non debitis tenetur
-          quisquam, soluta quia quaerat labore maxime ab at, culpa molestias.
-        </Typography>
-      </Box>
+    <>
+      <Typography variant="h3" align="center" color="secondary" gutterBottom>Hello Material UI</Typography>
+      {/* <Typography variant="h3" align="right">Hello Material UI</Typography> */}
 
-      <Box width={400} boxShadow={6} p={3} m={3}>
-        <Typography variant="h4" align="center">
-          Blogging Site
-        </Typography>
-        <Typography variant="body2" align="center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam molestias
-          commodi impedit ab? Quos modi aspernatur mollitia provident
-          voluptatem! Illum deleniti suscipit architecto commodi voluptatibus
-          temporibus aut eos nemo exercitationem. Lorem ipsum dolor sit amet
-          consectetur, adipisicing elit. Odit dicta exercitationem ratione
-          consequuntur dolores quo laudantium voluptate non debitis tenetur
-          quisquam, soluta quia quaerat labore maxime ab at, culpa molestias.
-        </Typography>
-      </Box>
-    </Box>
+      <Typography variant="subtitle2" align="justify" color="primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore iste, ratione incidunt blanditiis laborum, obcaecati accusantium vitae corrupti possimus quo amet, aliquid omnis reprehenderit dolorum veritatis ut animi minima sequi? Lorem ipsum, amet consectetur adipisicing elit. Temporibus eligendi vel quas beatae repellat in illum debitis perspiciatis maiores commodi? Pariatur magni distinctio placeat quis tempora eos neque possimus animi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore iste, ratione incidunt blanditiis laborum, obcaecati accusant dolor sit amet consectetur adipisicing elit. Temporibus eligendi vel quas beatae repellat in illum debitis perspiciatis ium vitae corrupti possimus quo amet, aliquid omnis reprehenderit dolorum veritatis ut animi minima sequi? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus eligendi vel quas beatae repellat in illum debitis perspiciatis maiores commodi? Pariatur magni distinctio placeat quis tempora eos neque possimus animi?</Typography>
+    </>
   );
 }
 
